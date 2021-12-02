@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.header_up{
+    background: #1BB55C;
+}
+#stock_search{
+    background: #F1FBF5;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 30px 30px 0px;
+    width: 900px;
+    height: 40px;
+    outline: none;
+    border:0px;
+    font-size: 1em;
+    margin-top: 31px;
+    font-family: 'Inter', sans-serif;
+}
+.search_area button{
+    background: white;
+    height: 42px;
+    outline: none;
+    border: 0px;
+    margin-top: 31px;
+    outline: none;
+    border-radius: 30px 0px 0px 30px;
+    cursor: pointer;
+}
+#stock_search{
+    background: white;
+}
+.search_area img{
+    margin-top: -6px;
+}
+.search_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.lower_search_area{
+    margin-top: 20px;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 29px;
+}
+.four_buttons{
+}
+.four_buttons button{
+    outline: none;
+    border: 0px;
+    background: #1BB55C;
+    color: white;
+    font-size: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.four_buttons button:hover{
+    font-weight: 700;
+}
+.header_up{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.logo_area img{
+    padding-top: 10px;
+    margin-left: -90px;
+    margin-top: 6px;
+}
