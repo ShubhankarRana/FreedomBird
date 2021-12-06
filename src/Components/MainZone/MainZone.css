@@ -1,0 +1,10 @@
+.apexChart{
+    width: 1000px;
+    height: 800px;
+    
+}
+.loaderArea{
+    margin-top: -130px;
+    display: flex;
+    align-items: center;
+}

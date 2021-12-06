@@ -56,7 +56,9 @@
     font-weight: 500;
 }
 .four_buttons button:hover{
+    transition: all ease-in-out 0.1s;
     font-weight: 700;
+    color: black;
 }
 .header_up{
     display: flex;
