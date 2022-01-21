@@ -10,10 +10,30 @@
   display: flex;
 }
 .sidebarZone{
-  width: 680px;
+  width: 580px;
   height: 100%;
- 
 }
+
+/* width */
+.sidebarZone ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.sidebarZone ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.sidebarZone ::-webkit-scrollbar-thumb {
+  background: #1bb55b80;
+}
+
+/* Handle on hover */
+.sidebarZone ::-webkit-scrollbar-thumb:hover {
+  background: #1bb55b7e;
+}
+
 .rightZone{
   overflow-y: scroll;
   display: flex;

@@ -14,7 +14,7 @@ export default function Header(props) {
       <div className="mid_area">
         <div className="search_area">
           <button onClick={()=>{
-           props.searchStock(props.search);
+           props.searchStock(props.search,'1y','1d');
           }}>
             <img src={SearchIcon}></img>
           </button>
