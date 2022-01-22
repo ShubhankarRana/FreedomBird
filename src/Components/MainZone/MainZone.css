@@ -1,10 +1,42 @@
 .apexChart{
     width: 1000px;
-    height: 800px;
+    height: 600px;
     
 }
 .loaderArea{
     margin-top: -130px;
     display: flex;
     align-items: center;
+}
+.ourarea{
+    text-align: left;
+
+}
+.bigban{
+    font-family: Inter;
+font-style: normal;
+font-weight: 600;
+font-size: 1.75em;
+line-height: 37px;
+}
+.closes_mn{
+    color: #1BB35B;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.oneofthem{
+    width: 70px;
+    height: 45px;
+    background: #6FCF97;
+    border-radius: 15px;
+    outline: none;
+    border: 0px;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-right: 5px;
+}
+.oneofthem:hover{
+    color: black;
+    cursor: pointer;
 }

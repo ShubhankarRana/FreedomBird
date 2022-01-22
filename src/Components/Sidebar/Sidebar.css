@@ -4,7 +4,13 @@
     display: flex;
     overflow-y: auto;
     align-items: center;
+  
+   
     flex-direction: column;
+}
+.indianBtn:nth-child(1){
+    margin-top: 20px;
+
 }
 .indianBtn{
     background-color: #51C683;
@@ -19,7 +25,7 @@
     font-weight: 600;
     color: white;
     cursor: pointer;
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.212);
+    box-shadow: 0px 7px 25px 10px rgba(0, 0, 0, 0.07);
 }
 .indianBtn:hover{
     transition: all ease-in-out 0.1s;
@@ -30,7 +36,7 @@
     font-weight: 600;
     color: rgba(0, 0, 0, 0.877);
     text-align: left;
-    margin-left: -30px;
+    margin-left: -80px;
     margin-top: 10px;
 }
 .price{
@@ -38,11 +44,20 @@
     text-align: left;
     font-size: 20px;
     margin-top: 10px;
-    margin-left: -185px;
+    margin-left: -230px;
 }
 .candleChart{
     background-color: white;
-    width: 90%;
-    border-radius: 10px;   
+    width: 80%;
+    padding-top: 10px;
+    padding-right: 4px;
+    border-radius: 25px;   
     margin-top: 70px;
+    margin-bottom: 40px;
+}
+.closes_c{
+    color: white;
+    margin-left: -74px;
+    margin-top: 10px;
+    font-size: 20px;
 }
