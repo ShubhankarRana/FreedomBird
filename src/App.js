@@ -13,6 +13,7 @@ function App() {
   let [loading,setLoading]=useState(false);
   let [chartData,setChartData]=useState([]);
   let [metaData,setMetaData]=useState(null);
+  let [stockTrend,setTrend]=useState('green');
 
   let searchStock=((searchVal,timeRange,timeInterval)=>{
     setLoading(true);
@@ -20,22 +21,27 @@ function App() {
     let endPoint=`https://yfapi.net/v8/finance/chart/${searchVal}?range=${timeRange}&region=US&interval=${timeInterval}&lang=en&events=div%2Csplit`;
     var headers = {
       'accept': 'application/json',
-      'X-API-KEY': "0PUnwhgRwA2y8QKzEutBdcEmzHly1YS480sWju21"
+      'X-API-KEY': "uLIE7UJi4D2AG538g5HSY7TzEPCjoO9f5q3HEDXg"
     };
     axios.get(endPoint,{
       headers:headers
     }).then((resp)=>{
       let data=[];
       console.log(resp.data);
-      let meta=resp.data.chart.result[0].meta;
-
       let x=resp.data.chart.result[0].meta.chartPreviousClose;
       let t=resp.data.chart.result[0].timestamp;
       let h=resp.data.chart.result[0].indicators.quote[0].high;
       let l=resp.data.chart.result[0].indicators.quote[0].low;
       let o=resp.data.chart.result[0].indicators.quote[0].open;
       let c=resp.data.chart.result[0].indicators.quote[0].close;
+      
+      let closeGrph=c[c.length-1];
+      let pointChange=c[c.length-1]-o[0];
+      let percentChange=(c[c.length-1]-o[0])/(o[0])*100;
 
+      if(pointChange<0){
+        setTrend('red');
+      }
       for(let i=0;i<t.length;++i){
         data.push({
             x: new Date(t[i]*1000),
@@ -46,6 +52,14 @@ function App() {
       let chart_Data= [{
         data: data
       }];
+
+      let meta={
+          closeGrph:roundToTwo(closeGrph),
+          pointChange:roundToTwo(pointChange),
+          percentChange:roundToTwo(percentChange),
+          symbol:resp.data.chart.result[0].meta.symbol
+      };
+
       console.log(chart_Data);
       setChartData(chart_Data);
       console.log(meta);
@@ -66,7 +80,7 @@ function App() {
           <Sidebar></Sidebar>
         </div>
         <div className="rightZone">
-            <MainZone searchStock={searchStock} metaData={metaData} loading={loading} chartData={chartData}></MainZone>
+            <MainZone trend={stockTrend} search={search} searchStock={searchStock} metaData={metaData} loading={loading} chartData={chartData}></MainZone>
         </div>
       </div>
     </div>

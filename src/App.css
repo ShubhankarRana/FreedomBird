@@ -15,22 +15,22 @@
 }
 
 /* width */
-.sidebarZone ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
 /* Track */
-.sidebarZone ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-.sidebarZone ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: #1bb55b80;
 }
 
 /* Handle on hover */
-.sidebarZone ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: #1bb55b7e;
 }
 
