@@ -38,9 +38,13 @@ function App() {
       let closeGrph=c[c.length-1];
       let pointChange=c[c.length-1]-o[0];
       let percentChange=(c[c.length-1]-o[0])/(o[0])*100;
-
+      console.log(pointChange,stockTrend);
       if(pointChange<0){
+        console.log(stockTrend);
         setTrend('red');
+      }
+      else{
+        setTrend('grren')
       }
       for(let i=0;i<t.length;++i){
         data.push({

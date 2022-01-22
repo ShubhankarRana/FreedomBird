@@ -28,6 +28,7 @@ export default function MainZone(props) {
   if(props.trend&&props.trend=="red"){
     colorTrend="#EE3446"
   }
+  console.log(props.trend,colorTrend);
   return !props.loading && props.chartData ? (
     <div className="ourarea">
       <div className="bigban">{props.metaData?.symbol}</div>
