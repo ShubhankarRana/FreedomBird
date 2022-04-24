@@ -21,7 +21,7 @@ function App() {
     let endPoint=`https://yfapi.net/v8/finance/chart/${searchVal}?range=${timeRange}&region=US&interval=${timeInterval}&lang=en&events=div%2Csplit`;
     var headers = {
       'accept': 'application/json',
-      'X-API-KEY': "uLIE7UJi4D2AG538g5HSY7TzEPCjoO9f5q3HEDXg"
+      'X-API-KEY': "6NeIEPI6Zl2bNqNkKrZTR8hriJEQRBsx7bhdPYsW"
     };
     axios.get(endPoint,{
       headers:headers
