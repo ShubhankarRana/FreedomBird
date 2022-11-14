@@ -18,7 +18,7 @@ export default function Sidebar(props) {
     setLoading(true);
     var headers = {
       accept: "application/json",
-      "X-API-KEY": "6NeIEPI6Zl2bNqNkKrZTR8hriJEQRBsx7bhdPYsW",
+      "X-API-KEY": "0PUnwhgRwA2y8QKzEutBdcEmzHly1YS480sWju21      ",
     };
     axios
       .get(
